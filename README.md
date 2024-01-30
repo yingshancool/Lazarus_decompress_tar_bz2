@@ -95,11 +95,11 @@ begin
 
   DecompressBzip2(InputFileName, OutputFileName);
 
-  if not DirectoryExists('./abc') then
+  if not DirectoryExists('./abc/') then
   begin
-    CreateDir('./abc');
+    CreateDir('./abc/');
   end;
 
-  DecompressTar(OutputFileName, './abc');
+  DecompressTar(OutputFileName, './abc/');
 end;   
 ```
